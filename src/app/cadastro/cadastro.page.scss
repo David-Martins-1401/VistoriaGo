@@ -1,0 +1,43 @@
+ion-header {
+    background-color: #3880ff; // Cor do cabeçalho
+    color: white; // Cor do texto do cabeçalho
+  }
+  
+  ion-toolbar {
+    --background: #3880ff; // Fundo da toolbar
+  }
+  
+  ion-title {
+    font-weight: bold;
+  }
+  
+  ion-content {
+    --background: #f8f9fa; // Cor de fundo do conteúdo
+    padding: 20px; // Adiciona espaçamento ao redor do conteúdo
+  }
+  
+  form {
+    background: white; // Cor de fundo do formulário
+    border-radius: 8px; // Bordas arredondadas
+    padding: 20px; // Espaçamento interno
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra para o formulário
+  }
+  
+  ion-item {
+    margin-bottom: 15px; // Espaçamento entre os itens do formulário
+  }
+  
+  ion-button {
+    margin-top: 15px; // Espaçamento acima do botão
+  }
+  
+  ion-label {
+    font-weight: bold; // Deixa os rótulos mais destacados
+  }
+  
+  input[type="file"] {
+    border: 1px solid #ccc; // Borda para o campo de arquivo
+    border-radius: 4px; // Bordas arredondadas para o campo de arquivo
+    padding: 10px; // Espaçamento interno para o campo de arquivo
+  }
+  

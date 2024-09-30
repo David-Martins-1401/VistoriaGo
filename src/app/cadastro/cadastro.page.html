@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastro de Vistoriador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="onSubmit()" #cadastroForm="ngForm">
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" name="nome" required [(ngModel)]="vistoriador.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input type="text" name="cpf" required [(ngModel)]="vistoriador.cpf"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">RG</ion-label>
+      <ion-input type="text" name="rg" required [(ngModel)]="vistoriador.rg"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Telefone</ion-label>
+      <ion-input type="text" name="telefone" required [(ngModel)]="vistoriador.telefone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Endereço</ion-label>
+      <ion-input type="text" name="endereco" [(ngModel)]="vistoriador.endereco"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">CNH</ion-label>
+      <ion-input type="text" name="cnh" required [(ngModel)]="vistoriador.cnh"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Login</ion-label>
+      <ion-input type="text" name="login" required [(ngModel)]="vistoriador.login"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" name="senha" required [(ngModel)]="vistoriador.senha"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Selfie com Documento</ion-label>
+      <ion-input type="file" (change)="onFileChange($event)" accept="image/jpeg"></ion-input>
+    </ion-item>
+    <ion-button expand="full" type="submit">Cadastrar</ion-button>
+  </form>
+  <ion-button expand="full" (click)="visualizarDados()">Visualizar Dados</ion-button>
+</ion-content>
